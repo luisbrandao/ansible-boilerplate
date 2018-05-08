@@ -1,0 +1,22 @@
+---
+# ==============================================================================
+# ============================= COMMON GROUP ===================================
+# ==============================================================================
+- hosts: server
+  tasks:
+# Apache =================================================
+  - name: Httpd| Install
+    yum:
+      name: httpd
+      state: present
+
+  - name: Copy a file somewere
+    template: src=files/template.conf dest=/tmp/confile.conf
+
+  - name: Unpack some files
+    unarchive:
+      src: files/compact.tgz
+      dest: /tmp/
+
+  - name: Httpd| restart and enable
+    service: name=httpd state=restarted enabled=yes
