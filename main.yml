@@ -5,7 +5,7 @@
 - hosts: server
   tasks:
   - include_role:
-       name: luisbrandao.common
+       name: ansible-common
 
   - name: Httpd| Install
     yum:
