@@ -1,2 +1,5 @@
 .cache*
 *.retry
+roles/ansible-common
+roles/geerlingguy.repo-epel
+roles/geerlingguy.repo-remi

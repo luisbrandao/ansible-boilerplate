@@ -1,0 +1,6 @@
+#- src: git+git@bitbucket.org:ursuad/sample_role_launchpad-ppa-webupd8.git
+#  version: v1.0.0
+#  path: roles/
+
+- src: git+https://techmago.sytes.net/git/techmago/ansible-common.git
+  path: roles/

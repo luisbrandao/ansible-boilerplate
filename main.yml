@@ -4,7 +4,9 @@
 # ==============================================================================
 - hosts: server
   tasks:
-# Apache =================================================
+  - include_role:
+       name: luisbrandao.common
+
   - name: Httpd| Install
     yum:
       name: httpd
