@@ -2,5 +2,5 @@
 #  version: v1.0.0
 #  path: roles/
 
-- src: git+https://techmago.sytes.net/git/techmago/ansible-common.git
+- src: git+https://git.techsytes.com/techmago/ansible-common.git
   path: roles/
